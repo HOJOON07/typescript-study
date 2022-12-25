@@ -1,4 +1,4 @@
-function add(n1: number, n2: number) {
+function addfunction(n1: number, n2: number) {
   return n1 + n2;
 }
 
@@ -6,7 +6,7 @@ function add(n1: number, n2: number) {
 //   console.log("result: " + num);
 // }
 
-function printResult(num: number): void {
+function printResultfunction(num: number): void {
   console.log("result: " + num);
 } //값을 반환하지 않는 함수를 사용하는 경우에은 void를 표준으로 사용한다.
 
@@ -17,12 +17,12 @@ function addAndHandle(n1: number, n2: number, cb: (num: number) => void) {
 
 let combineValues: (a: number, b: number) => number;
 
-combineValues = add;
+combineValues = addfunction;
 // combineValues = printResult;
 
 console.log(combineValues(8, 8));
 
-printResult(add(5, 12));
+printResultfunction(addfunction(5, 12));
 
 addAndHandle(10, 20, (result) => {
   console.log(result);
